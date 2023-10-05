@@ -1,1 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+  }
 
+nav{
+        background-color: #C70039;
+        font-size: 1rem;
+        height: 6vh;
+        text-align: center;
+}
+
+nav ul{
+    padding:0;
+    position: relative;
+  
+  }
+
+ nav a{
+    list-style-type: none;
+    color: #fff;
+    text-decoration: none;
+    
+  }
+
+nav li {
+    display: inline-block;
+    padding-left: 3rem;
+  }
+
+nav li:first-child{
+    padding-left: 0rem;
+  }
+nav li:last-child{
+    float: right;
+    padding: 0rem;
+    padding-right: 3rem;
+    font-size: 15px;
+}
+.sidebar{
+    border: #3d5a80;
+    border-radius: 2px ;
+    width: 25vh;
+    padding: 2rem;
+    padding-right: 0;
+    border-style: solid;
+}
+.sidebar h2{
+font-size: 1.5rem;
+color: #C70039;
+}
+
+.sidebar h3{
+    font-size: 1rem;
+    color: #C70039;
+    }
+
+.initiatieven-cards{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /*wanneer er meer items bij komen dan geven de andere elementen elkaar vooralsnog evenveel ruimte*/
+}
+#card{
+  width: 30%;
+  height: 30vh;
+  margin: 10px;
+  border-radius: 10px; /* Rounded corners */
+  background-color: #293241;
+  color: #fff;
+  padding:0.5rem 2rem;
+  padding-top: 2rem;
+}
+.card-content {
+  display: flex;
+  align-items: center;
+}
+
+.cardinfo {
+  padding: 10px;
+}
+
+img {
+  max-width: 40%;
+  height: auto;
+  border: 1px solid #fff ; /* Add a border */
+}
+#card h2{
+  font-size: 1.1rem;
+}
+#card p{
+  font-size: 0.8rem;
+}
