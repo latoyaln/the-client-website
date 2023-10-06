@@ -62,15 +62,15 @@ color: #C70039;
   justify-content: space-evenly;
   flex-wrap: wrap; /*wanneer er meer items bij komen dan geven de andere elementen elkaar vooralsnog evenveel ruimte*/
 }
-#card{
+.card  {
   width: 30%;
   height: 30vh;
   margin: 10px;
   border-radius: 10px; /* Rounded corners */
-  background-color: #293241;
+  background-color: #000;
   color: #fff;
   padding:0.5rem 2rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 .card-content {
   display: flex;
