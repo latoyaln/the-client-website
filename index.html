@@ -5,161 +5,238 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>De Hallen Buurt initiatieven</title>
     <link rel="stylesheet" href="styles/styles.css"/>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
 </head>
 <body>
     <nav>
 
         <ul>
-            <li><a href="#">historie</a></li>
-            <li><a href="#">de hallen</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="https://dehallen-amsterdam.nl/toen-en-nu/" target="_blank">historie</a></li>
+            <li><a href="https://dehallen-amsterdam.nl/aanbodkaart/" target="_blank">de hallen</a></li>
+            <li><a href="https://dehallen-amsterdam.nl/contact/" target="_blank">contact</a></li>
             <li><a href="#">nl</a></li>
           </ul>
 
     </nav>
+<main>
 
-    <section class="sidebar">
+  <section class="sidebar">
 
-        <h2>Filter op:</h2>
-        <h3>prijs</h3>
+    <h2>Filter op:</h2>
+    <h3>prijs</h3>
+
+    <label class="container">
+        <input type="radio" checked="checked" name="radio">
+        <span class="checkmark"></span> betaald
+      </label>
+
+      <label class="container">
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>gratis
+      </label>
+
+      <h3>initiatiefnemers</h3>
+      <label class="container">
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span> ondernemers / organisaties
+        </label>
 
         <label class="container">
-            <input type="radio" checked="checked" name="radio">
-            <span class="checkmark"></span> betaald
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>buurt bewoners
+        </label>
+
+    <h3>categorie</h3>
+      <label class="container">
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span> cultuur
+        </label>
+
+        <label class="container">
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>concerten / festivals
+        </label>
+
+        <label class="container">
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>kinderen
           </label>
 
           <label class="container">
             <input type="radio" name="radio">
-            <span class="checkmark"></span>gratis
+            <span class="checkmark"></span>eten / drinken
           </label>
 
-          <h3>initiatiefnemers</h3>
+          <label class="container">
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>sport
+          </label>
+
+          <label class="container">
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>uitgaan / feesten
+          </label>
+
+          <h3>locatie</h3>
           <label class="container">
               <input type="radio" checked="checked" name="radio">
-              <span class="checkmark"></span> ondernemers / organisaties
+              <span class="checkmark"></span> west
             </label>
 
             <label class="container">
               <input type="radio" name="radio">
-              <span class="checkmark"></span>buurt bewoners
-            </label>
-
-        <h3>categorie</h3>
-          <label class="container">
-              <input type="radio" checked="checked" name="radio">
-              <span class="checkmark"></span> cultuur
-            </label>
-
-            <label class="container">
-              <input type="radio" name="radio">
-              <span class="checkmark"></span>concerten / festivals
+              <span class="checkmark"></span>zuid
             </label>
 
             <label class="container">
                 <input type="radio" name="radio">
-                <span class="checkmark"></span>kinderen
+                <span class="checkmark"></span>noord
               </label>
 
               <label class="container">
                 <input type="radio" name="radio">
-                <span class="checkmark"></span>eten / drinken
+                <span class="checkmark"></span>oost
               </label>
+  </section>
 
-              <label class="container">
-                <input type="radio" name="radio">
-                <span class="checkmark"></span>sport
-              </label>
+  <section class="initiatieven-cards">
 
-              <label class="container">
-                <input type="radio" name="radio">
-                <span class="checkmark"></span>uitgaan / feesten
-              </label>
+    <div class="sport card">
 
-              <h3>locatie</h3>
-              <label class="container">
-                  <input type="radio" checked="checked" name="radio">
-                  <span class="checkmark"></span> west
-                </label>
+      <section class="card-content">
 
-                <label class="container">
-                  <input type="radio" name="radio">
-                  <span class="checkmark"></span>zuid
-                </label>
+        <img src="http://www.avvsloterdijk.com/wp-content/uploads/2019/07/E250E794DBC7173E00174CEA17F403E2_950_0.jpg" alt="Avv-Sloterdijk">
+        
+        <h4>locatie: amsterdam</h4>
+        <h4>datum: 01.01.2023</h4>
+        
+        <section class="cardinfo">
+          
 
-                <label class="container">
-                    <input type="radio" name="radio">
-                    <span class="checkmark"></span>noord
-                  </label>
+          <h2>A.V.V Sloterdijk</h2>
 
-                  <label class="container">
-                    <input type="radio" name="radio">
-                    <span class="checkmark"></span>oost
-                  </label>
+          <p>Als avv Sloterdijk streven wij een optimaal sportklimaat voor jong en oud na, zowel voor recreatieve als prestatiegerichte personen.</p>
+        
+        </section>
+
       </section>
 
-    <section class="initiatieven-cards">
+    </div>
 
-      <div class="sport card">
+    <div class="eten card">
 
-        <section class="card-content">
+      <section class="card-content">
 
-          <img src="http://www.avvsloterdijk.com/wp-content/uploads/2019/07/E250E794DBC7173E00174CEA17F403E2_950_0.jpg" alt="Avv-Sloterdijk">
-         
-          <section class="cardinfo">
+        <img src="https://cdn.nos.nl/image/2022/05/12/860223/1024x576a.jpg" alt="Voedselbank">
+        
+        <h4>locatie: amsterdam</h4>
+        <h4>datum: 01.01.2023</h4>
 
-            <h2>A.V.V Sloterdijk</h2>
-            <p>Als avv Sloterdijk streven wij een optimaal sportklimaat voor jong en oud na,
-               zowel voor recreatieve als prestatiegerichte personen.</p>
-          
-          </section>
+        <section class="cardinfo">
 
-        </section>
+          <h2>Mijn Sociale Plicht BIAN</h2>
 
-      </div>
-
-      <div class="eten card">
-
-        <section class="card-content">
-
-          <img src="https://cdn.nos.nl/image/2022/05/12/860223/1024x576a.jpg" alt="Voedselbank">
-          
-          <section class="cardinfo">
-
-            <h2>Mijn Sociale Plicht BIAN</h2>
-
-            <p>
-              Sinds februari deelt Jean Richardson iedere maandag goed 
-              maar overtollig eten uit aan de minimahuishoudens uit de buurt
-            </p>
-
-            <p>locatie: Oud-West</p>
-
-          </section>
+          <p>
+            Sinds februari deelt Jean Richardson iedere maandag goed 
+            maar overtollig eten uit aan de minimahuishoudens uit de buurt
+          </p>
 
         </section>
 
-      </div>
+      </section>
 
-      <div class="sport card">
+    </div>
 
-        <section class="card-content">
+    <div class="sport card">
 
-          <img src="http://www.avvsloterdijk.com/wp-content/uploads/2019/07/E250E794DBC7173E00174CEA17F403E2_950_0.jpg" alt="Avv-Sloterdijk">
-         
-          <section class="cardinfo">
+      <section class="card-content">
 
-            <h2>A.V.V Sloterdijk</h2>
+        <img src="http://www.avvsloterdijk.com/wp-content/uploads/2019/07/E250E794DBC7173E00174CEA17F403E2_950_0.jpg" alt="Avv-Sloterdijk">
+      
+        <h4>locatie: amsterdam</h4>
+        <h4>datum: 01.01.2023</h4>
 
-            <p>Als avv Sloterdijk streven wij een optimaal sportklimaat voor jong en oud na, zowel voor recreatieve als prestatiegerichte personen.</p>
-          
-          </section>
+        <section class="cardinfo">
 
+          <h2>A.V.V Sloterdijk</h2>
+
+          <p>Als avv Sloterdijk streven wij een optimaal sportklimaat voor jong en oud na,
+             zowel voor recreatieve als prestatiegerichte personen.</p>
+        
         </section>
 
-      </div>
+      </section>
 
-    </section>
+    </div>
+    <div class="sport card">
+
+      <section class="card-content">
+
+        <img src="http://www.avvsloterdijk.com/wp-content/uploads/2019/07/E250E794DBC7173E00174CEA17F403E2_950_0.jpg" alt="Avv-Sloterdijk">
+        
+        <h4>locatie: amsterdam</h4>
+        <h4>datum: 01.01.2023</h4>
+        
+        <section class="cardinfo">
+          
+
+          <h2>A.V.V Sloterdijk</h2>
+
+          <p>Als avv Sloterdijk streven wij een optimaal sportklimaat voor jong en oud na, zowel voor recreatieve als prestatiegerichte personen.</p>
+        
+        </section>
+
+      </section>
+
+    </div>
+    <div class="sport card">
+
+      <section class="card-content">
+
+        <img src="http://www.avvsloterdijk.com/wp-content/uploads/2019/07/E250E794DBC7173E00174CEA17F403E2_950_0.jpg" alt="Avv-Sloterdijk">
+       
+        <h4>locatie: amsterdam</h4>
+        <h4>datum: 01.01.2023</h4>
+        
+        <section class="cardinfo">
+          
+
+          <h2>A.V.V Sloterdijk</h2>
+
+          <p>Als avv Sloterdijk streven wij een optimaal sportklimaat voor jong en oud na, zowel voor recreatieve als prestatiegerichte personen.</p>
+        
+        </section>
+
+      </section>
+
+    </div>
+    <div class="sport card">
+
+      <section class="card-content">
+
+        <img src="http://www.avvsloterdijk.com/wp-content/uploads/2019/07/E250E794DBC7173E00174CEA17F403E2_950_0.jpg" alt="Avv-Sloterdijk">
+        
+        <h4>locatie: amsterdam</h4>
+        <h4>datum: 01.01.2023</h4>
+
+        <section class="cardinfo">
+          
+
+          <h2>A.V.V Sloterdijk</h2>
+
+          <p>Als avv Sloterdijk streven wij een optimaal sportklimaat voor jong en oud na, zowel voor recreatieve als prestatiegerichte personen.</p>
+        
+        </section>
+
+      </section>
+
+    </div>
+
+
+  </section>
+
+</main>
+  
     <script src="scripts/script.js"></script>
 </body>
 </html>

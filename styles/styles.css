@@ -2,14 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "poppins";
+    font-family: 'Space Grotesk';
   }
 
 nav{
-        background-color: #C70039;
+        background-color: #388087;
         font-size: 1rem;
         height: 6vh;
         text-align: center;
+        font-weight: medium;
+        padding-top: 10px;
 }
 
 nav ul{
@@ -20,7 +22,7 @@ nav ul{
 
  nav a{
     list-style-type: none;
-    color: #fff;
+    color: #f6f6f2;
     text-decoration: none;
     
   }
@@ -39,42 +41,61 @@ nav li:last-child{
     padding-right: 3rem;
     font-size: 15px;
 }
+
+main{
+  display: block;
+  margin-top: 5vh;
+}
 .sidebar{
-    border: #3d5a80;
-    border-radius: 2px ;
-    width: 25vh;
-    padding: 2rem;
+    background-color: #f6f6f2;
+    width: 15vw;
+    height: 90vh;
+    padding: 2em;
+    margin-left: 2em;
     padding-right: 0;
-    border-style: solid;
+    float: left;
 }
 .sidebar h2{
 font-size: 1.5rem;
-color: #C70039;
+color: #000;
 }
 
 .sidebar h3{
     font-size: 1rem;
-    color: #C70039;
+    color: #000;
     }
 
 .initiatieven-cards{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap; /*wanneer er meer items bij komen dan geven de andere elementen elkaar vooralsnog evenveel ruimte*/
+  float: left;
+  width: 80vw;
 }
+
+.card-content h4{
+  display: inline-block;
+  background-color: #c2edce;
+  color: #388087;
+  padding: 5px;
+  font-size: 0.8em;
+}
+
 .card  {
   width: 30%;
-  height: 30vh;
   margin: 10px;
+  -webkit-box-shadow: 4px 7px 16px 1px #388087; 
+  box-shadow: 4px 7px 16px 1px #388087;
   border-radius: 10px; /* Rounded corners */
-  background-color: #000;
-  color: #fff;
-  padding:0.5rem 2rem;
-  padding-top: 1rem;
+  color: #388087;
+  padding:0.5em 1em;
+  margin-bottom: 10vh;
 }
 .card-content {
-  display: flex;
   align-items: center;
+  border: #388087;
+  background-color: #fff;
+  height: 50vh;
 }
 
 .cardinfo {
@@ -82,13 +103,39 @@ color: #C70039;
 }
 
 img {
-  max-width: 40%;
+  max-width: 100%;
   height: auto;
   border: 1px solid #fff ; /* Add a border */
 }
 #card h2{
-  font-size: 1.1rem;
+  font-size: 0.8em;
 }
 #card p{
-  font-size: 0.8rem;
+  font-size: 0.5rem;
+}
+
+/* Responsive style for mobile (S) screens */
+@media (max-width: 900px)  {
+  
+  main{
+display: inline-block;
+  }
+
+  .sidebar{
+    visibility: hidden;
+  }
+
+  .initiatieven-cards{
+    width: 80vw;
+    float: left;
+  }
+
+  .card  {
+    width: 80%;
+    margin: 10px;
+    border-radius: 10px; /* Rounded corners */
+    color: #fff;
+    padding:0.5em 1em;
+  }
+
 }
