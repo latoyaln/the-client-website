@@ -19,84 +19,37 @@
 
     </nav>
 <main>
+  <header>
+    <h1>Buurtinitiatieven</h1>
+    <p>Er zijn veel verschillenden initiatieven in de buurt van Oud-West.
+      Echter zijn deze vaak lastig te vinden. Om dit probleem op te lossen is dit
+    digitaal platform ontwikkeld met een verzameling van diverse Buurtinitiatieven. </p>
+  </header>
 
   <section class="sidebar">
 
+    <button id="clearFilters"> wis filter</button>
+
     <h2>Filter op:</h2>
+    
     <h3>prijs</h3>
+     <label><input type="checkbox" class="filter" value="betaald"> betaald</label>
+     <label> <input type="checkbox" class="filter" value="gratis"> gratis</label>
 
-    <label class="container">
-        <input type="radio" checked="checked" name="radio">
-        <span class="checkmark"></span> betaald
-      </label>
-
-      <label class="container">
-        <input type="radio" name="radio">
-        <span class="checkmark"></span>gratis
-      </label>
-
-      <h3>initiatiefnemers</h3>
-      <label class="container">
-          <input type="radio" checked="checked" name="radio">
-          <span class="checkmark"></span> ondernemers / organisaties
-        </label>
-
-        <label class="container">
-          <input type="radio" name="radio">
-          <span class="checkmark"></span>buurt bewoners
-        </label>
+    <!-- <h3>initiatiefnemers</h3>
+        <button class="btn" data-category="ondernemers"> ondernemers/organisaties</button>
+        <button class="btn" data-category="buurtbew"> buurt bewoners</button> -->
 
     <h3>categorie</h3>
-      <label class="container">
-          <input type="radio" checked="checked" name="radio">
-          <span class="checkmark"></span> cultuur
-        </label>
+    <label><input type="checkbox" class="filter" value="sport"> sport</label>
+    <label> <input type="checkbox" class="filter" value="eten"> eten</label>
+    <!-- <button class="btn" data-category="cultuur"> cultuur/kunst</button>
+    <button class="btn" data-category="muziek"> muziek</button>
+    <button class="btn" data-category="kids"> kinderen</button>
+    <button class="btn" data-category="food"> eten / drinken</button>
+    <button class="btn" data-category="sport"> sport</button> -->
+    <button id="applyFilters">Apply Filters</button>
 
-        <label class="container">
-          <input type="radio" name="radio">
-          <span class="checkmark"></span>concerten / festivals
-        </label>
-
-        <label class="container">
-            <input type="radio" name="radio">
-            <span class="checkmark"></span>kinderen
-          </label>
-
-          <label class="container">
-            <input type="radio" name="radio">
-            <span class="checkmark"></span>eten / drinken
-          </label>
-
-          <label class="container">
-            <input type="radio" name="radio">
-            <span class="checkmark"></span>sport
-          </label>
-
-          <label class="container">
-            <input type="radio" name="radio">
-            <span class="checkmark"></span>uitgaan / feesten
-          </label>
-
-          <h3>locatie</h3>
-          <label class="container">
-              <input type="radio" checked="checked" name="radio">
-              <span class="checkmark"></span> west
-            </label>
-
-            <label class="container">
-              <input type="radio" name="radio">
-              <span class="checkmark"></span>zuid
-            </label>
-
-            <label class="container">
-                <input type="radio" name="radio">
-                <span class="checkmark"></span>noord
-              </label>
-
-              <label class="container">
-                <input type="radio" name="radio">
-                <span class="checkmark"></span>oost
-              </label>
   </section>
 
   <section class="initiatieven-cards">
@@ -115,7 +68,7 @@
 
           <h2>A.V.V Sloterdijk</h2>
 
-          <p>Als avv Sloterdijk streven wij een optimaal sportklimaat voor jong en oud na, zowel voor recreatieve als prestatiegerichte personen.</p>
+          <h3>Kom gezellig voetballen.</h3>
         
         </section>
 
@@ -136,10 +89,7 @@
 
           <h2>Mijn Sociale Plicht BIAN</h2>
 
-          <p>
-            Sinds februari deelt Jean Richardson iedere maandag goed 
-            maar overtollig eten uit aan de minimahuishoudens uit de buurt
-          </p>
+          <h3>Eten voor minimahuishoudens</h3>
 
         </section>
 
@@ -160,8 +110,7 @@
 
           <h2>A.V.V Sloterdijk</h2>
 
-          <p>Als avv Sloterdijk streven wij een optimaal sportklimaat voor jong en oud na,
-             zowel voor recreatieve als prestatiegerichte personen.</p>
+          <h3>Kom gezellig voetballen.</h3>
         
         </section>
 
@@ -182,7 +131,7 @@
 
           <h2>A.V.V Sloterdijk</h2>
 
-          <p>Als avv Sloterdijk streven wij een optimaal sportklimaat voor jong en oud na, zowel voor recreatieve als prestatiegerichte personen.</p>
+          <h3>Kom gezellig voetballen.</h3>
         
         </section>
 
@@ -203,7 +152,7 @@
 
           <h2>A.V.V Sloterdijk</h2>
 
-          <p>Als avv Sloterdijk streven wij een optimaal sportklimaat voor jong en oud na, zowel voor recreatieve als prestatiegerichte personen.</p>
+          <h3>Kom gezellig voetballen.</h3>
         
         </section>
 
@@ -224,7 +173,7 @@
 
           <h2>A.V.V Sloterdijk</h2>
 
-          <p>Als avv Sloterdijk streven wij een optimaal sportklimaat voor jong en oud na, zowel voor recreatieve als prestatiegerichte personen.</p>
+          <h3>Kom gezellig voetballen.</h3>
         
         </section>
 
