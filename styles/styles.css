@@ -62,12 +62,32 @@ header{
 .sidebar h2{
   font-size: 1.5em;
   color: #000;
+  padding-bottom: 1vh;
+}
+
+.sidebar h3{
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+}
+
+.dropdown-button {
+  display: none; /* Hide the dropdown button by default */
+  cursor: pointer;
+}
+
+.applyFilters{
+  bottom: 0;
+  position: absolute;
+  border-radius: 10px; /* Rounded corners */
+  color: #fff;
+  width: 6vw;
+  height: 3vw;
+  background-color: #388087;
 }
 
 h3{
     font-size: 1em;
     color: #000;
-    font-weight: regular;
     }
 
 .initiatieven-cards{
@@ -100,7 +120,7 @@ h3{
   align-items: center;
   border: #388087;
   background-color: #fff;
-  height: 40vh;
+  height: vh;
 }
 
 .cardinfo {
@@ -108,8 +128,10 @@ h3{
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 22vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 
 .card h2{
@@ -122,26 +144,81 @@ img {
 
 /* Responsive style for mobile (S) screens */
 @media (max-width: 900px)  {
+      
+    main{
+      display: inline-block;
+      position: relative;
+   }
+      nav ul {
+        font-size: 12px;
+    }
+
+    .sidebar-toggle {
+        display: none; /* Hide the checkbox input */
+    }
+
+    .sidebar {
+      display: none; /* Hide the sidebar by default */
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+    }
   
-  main{
-display: inline-block;
-  }
+    .sidebar-toggle:checked + .sidebar {
+      display: block; /* Show the sidebar when the checkbox is checked */
+    }
 
-  .sidebar{
-    visibility: hidden;
-  }
+    .sidebar-toggle-label {
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        top: 10px;
+        left: 10px;
+        z-index: 1000; /* Ensure it's above other content */
+    }
 
+    .sidebar-toggle-label::before {
+        content: "☰"; /* Hamburger icon */
+        font-size: 20px;
+    }
+
+
+    .sidebar-toggle-label {
+        top: auto;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
   .initiatieven-cards{
     width: 80vw;
     float: left;
   }
 
   .card  {
-    width: 80%;
+    width: 90%;
     margin: 10px;
     border-radius: 10px; /* Rounded corners */
     color: #fff;
     padding:0.5em 1em;
   }
+  img{
+    min-width: 100%;
+    height: auto;
+  }
+
+  h1{
+    font-size: 1.2em;
+  }
+
+  .cardinfo h2{
+    font-size: 1em;
+  }
+
+  h3{
+    font-size: 0.8em;
+  }
+
 
 }

@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav>
-
+     
         <ul>
             <li><a href="https://dehallen-amsterdam.nl/toen-en-nu/" target="_blank">historie</a></li>
             <li><a href="https://dehallen-amsterdam.nl/aanbodkaart/" target="_blank">de hallen</a></li>
@@ -19,6 +19,7 @@
 
     </nav>
 <main>
+
   <header>
     <h1>Buurtinitiatieven</h1>
     <p>Er zijn veel verschillenden initiatieven in de buurt van Oud-West.
@@ -26,49 +27,53 @@
     digitaal platform ontwikkeld met een verzameling van diverse Buurtinitiatieven. </p>
   </header>
 
+  <input type="checkbox" class="sidebar-toggle" id="sidebar-toggle">
+  <label for="sidebar-toggle" class="sidebar-toggle-label"></label>
+  
   <section class="sidebar">
 
-    <button id="clearFilters"> wis filter</button>
+    <button class="clearFilters"> wis filter</button>
 
     <h2>Filter op:</h2>
-    
+
     <h3>prijs</h3>
      <label><input type="checkbox" class="filter" value="betaald"> betaald</label>
      <label> <input type="checkbox" class="filter" value="gratis"> gratis</label>
 
-    <!-- <h3>initiatiefnemers</h3>
-        <button class="btn" data-category="ondernemers"> ondernemers/organisaties</button>
-        <button class="btn" data-category="buurtbew"> buurt bewoners</button> -->
+    <h3>initiatiefnemers</h3>
+        <label><input type="checkbox" class="filter" value="ondernemers"> organisaties</label>
+        <label> <input type="checkbox" class="filter" value="buurtbew"> buurt bewoners</label>
 
     <h3>categorie</h3>
-    <label><input type="checkbox" class="filter" value="sport"> sport</label>
-    <label> <input type="checkbox" class="filter" value="eten"> eten</label>
-    <!-- <button class="btn" data-category="cultuur"> cultuur/kunst</button>
-    <button class="btn" data-category="muziek"> muziek</button>
-    <button class="btn" data-category="kids"> kinderen</button>
-    <button class="btn" data-category="food"> eten / drinken</button>
-    <button class="btn" data-category="sport"> sport</button> -->
-    <button id="applyFilters">Apply Filters</button>
+      <label><input type="checkbox" class="filter" value="sport"> sport</label>
+      <label> <input type="checkbox" class="filter" value="food"> eten</label>
+      <label><input type="checkbox" class="filter" value="culture"> cultuur</label>
+      <label> <input type="checkbox" class="filter" value="music"> muziek</label>
+      <label><input type="checkbox" class="filter" value="kids"> kinderen</label>
+      <label><input type="checkbox" class="filter" value="les"> les</label>
+  
+    <button class="applyFilters">Apply Filters</button>
 
   </section>
+  <button class="dropdown-button">Sidebar Dropdown</button>
 
   <section class="initiatieven-cards">
 
-    <div class="sport card">
+    <div class="cultuur card">
 
       <section class="card-content">
 
-        <img src="http://www.avvsloterdijk.com/wp-content/uploads/2019/07/E250E794DBC7173E00174CEA17F403E2_950_0.jpg" alt="Avv-Sloterdijk">
+        <img src="https://images.unsplash.com/photo-1587721865940-37ebee7fb730?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="https://unsplash.com/photos/IRCrSj-fj28?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash">
         
-        <h4>locatie: amsterdam</h4>
-        <h4>datum: 01.01.2023</h4>
+        <h4>locatie: de hallen</h4>
+        <h4>datum: 04 mei</h4>
         
         <section class="cardinfo">
           
+          <h2>4 Comité oud-west</h2>
 
-          <h2>A.V.V Sloterdijk</h2>
-
-          <h3>Kom gezellig voetballen.</h3>
+          <h3>Organiseert elk jaar 4-mei herdenking
+            in Amsterdam oud-west in de passage van De Hallen</h3>
         
         </section>
 
@@ -76,20 +81,21 @@
 
     </div>
 
-    <div class="eten card">
+    <div class="les card">
 
       <section class="card-content">
 
-        <img src="https://cdn.nos.nl/image/2022/05/12/860223/1024x576a.jpg" alt="Voedselbank">
+        <img src="https://images.unsplash.com/photo-1550592704-6c76defa9985?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="https://unsplash.com/photos/333oj7zFsdg">
         
         <h4>locatie: amsterdam</h4>
         <h4>datum: 01.01.2023</h4>
 
         <section class="cardinfo">
 
-          <h2>Mijn Sociale Plicht BIAN</h2>
+          <h2>ABC Amsterdams Buurvrouwen Contact</h2>
 
-          <h3>Eten voor minimahuishoudens</h3>
+          <h3>Organiseren taalles voor geïsoleerde anderstaligen, 
+            valt onder De Regenbooggroep</h3>
 
         </section>
 
