@@ -26,40 +26,34 @@
       Echter zijn deze vaak lastig te vinden. Om dit probleem op te lossen is dit
     digitaal platform ontwikkeld met een verzameling van diverse Buurtinitiatieven. </p>
   </header>
-
-
-  <label for="sidebar-toggle" class="sidebar-toggle-label"></label>
   
   <section class="sidebar">
-
-    <button class="clearFilters"> wis filter</button>
 
     <h2>Filter op:</h2>
 
     <h3>prijs</h3>
-     <label><input type="checkbox" class="filter" value="betaald"> betaald</label>
-     <label> <input type="checkbox" class="filter" value="gratis"> gratis</label>
+     <label><input type="checkbox" name="price" value="paid"> betaald</label>
+     <label> <input type="checkbox" name="price" value="free"> gratis</label>
 
     <h3>initiatiefnemers</h3>
-        <label><input type="checkbox" class="filter" value="ondernemers"> organisaties</label>
-        <label> <input type="checkbox" class="filter" value="buurtbew"> buurt bewoners</label>
+        <label><input type="checkbox" name="person" value="ask"> vraag</label>
+        <label> <input type="checkbox" name="person" value="offer"> aanbod</label>
 
     <h3>categorie</h3>
-      <label><input type="checkbox" class="filter" value="sport"> sport</label>
-      <label> <input type="checkbox" class="filter" value="food"> eten</label>
-      <label><input type="checkbox" class="filter" value="culture"> cultuur</label>
-      <label> <input type="checkbox" class="filter" value="music"> muziek</label>
-      <label><input type="checkbox" class="filter" value="kids"> kinderen</label>
-      <label><input type="checkbox" class="filter" value="les"> les</label>
-  
-    <button class="applyFilters">Apply Filters</button>
-
+      <label><input type="checkbox" name="categ" value="sport"> sport</label>
+      <label> <input type="checkbox" name="categ"  value="food"> eten</label>
+      <label><input type="checkbox" name="categ" value="culture"> cultuur</label>
+      <label> <input type="checkbox" name="categ" value="music"> muziek</label>
+      <label><input type="checkbox" name="categ"  value="kids"> kinderen</label>
+      <label><input type="checkbox" name="categ"  value="class"> les</label>
+    
   </section>
-  <button class="dropdown-button">Sidebar Dropdown</button>
 
   <section class="initiatieven-cards">
 
-    <div class="cultuur card">
+    <h4 id="match-count">0 Matches</h4>
+
+    <div class="card" data-price="free" data-person="offer" data-categ="culture">
 
       <section class="card-content">
 
@@ -67,21 +61,17 @@
         
         <h4>locatie: de hallen</h4>
         <h4>datum: 04 mei</h4>
-        
-        <section class="cardinfo">
           
           <h2>4 Comité oud-west</h2>
 
           <h3>Organiseert elk jaar 4-mei herdenking
             in Amsterdam oud-west in de passage van De Hallen</h3>
-        
-        </section>
 
       </section>
-
+      <a href="https://dehallen-amsterdam.nl/4-mei/" class="button-link" target="_blank">Meer informatie</a>
     </div>
 
-    <div class="les card">
+    <div class="card"  data-price="paid" data-person="offer" data-categ="class">
 
       <section class="card-content">
 
@@ -90,20 +80,16 @@
         <h4>locatie: amsterdam</h4>
         <h4>datum: altijd</h4>
 
-        <section class="cardinfo">
+          <h2>ABC</h2>
 
-          <h2>ABC Amsterdams Buurvrouwen Contact</h2>
-
-          <h3>Organiseren taalles voor geïsoleerde anderstaligen, 
-            valt onder De Regenbooggroep</h3>
-
-        </section>
+          <h3>Amsterdams Buurvrouwen Contact (ABC) organiseert taalles voor geïsoleerde anderstaligen </h3>
 
       </section>
 
+      <a href="https://www.deregenboog.org/nl/projecten/taalmaatje-van-het-amsterdams-buurvrouwen-contact" class="button-link" target="_blank">Meer informatie</a>
     </div>
 
-    <div class="kids card">
+    <div class="card"  data-price="free" data-person="offer" data-categ="kids">
 
       <section class="card-content">
 
@@ -112,19 +98,17 @@
         <h4>locatie: bilderdijkpark</h4>
         <h4>datum: gehele week</h4>
 
-        <section class="cardinfo">
-
           <h2>ASV Bilderdijkpark</h2>
 
           <h3>Speeltuinvereniging/speeltuin met toezicht 
             waar veel kidsactiviteiten worden georganiseerd</h3>
-        
-        </section>
 
       </section>
-
+      
+      <a href="https://www.bilderdijkpark.nl/wp/asv-bilderdijkpark/" class="button-link" target="_blank">Meer informatie</a>
     </div>
-    <div class="eten card">
+
+    <div class="card"  data-person="offer" data-categ="food">
 
       <section class="card-content">
 
@@ -133,20 +117,18 @@
         <h4>locatie: diverse locaties</h4>
         <h4>datum: -</h4>
         
-        <section class="cardinfo">
-          
-
           <h2>Boeren voor Buren</h2>
 
           <h3>Ondersteunen sociale voedselinitiatieven met
              groentepakketten van lokale boeren</h3>
-        
-        </section>
 
       </section>
 
+      <a href="https://boerenvoorburen.nl/" class="button-link" target="_blank">Meer informatie</a>
+
     </div>
-    <div class="sport card">
+
+    <div class="card"  data-price="paid" data-person="offer" data-categ="sport">
 
       <section class="card-content">
 
@@ -154,20 +136,17 @@
        
         <h4>locatie: amsterdam</h4>
         <h4>datum: 01.01.2023</h4>
-        
-        <section class="cardinfo">
-          
 
           <h2>A.V.V Sloterdijk</h2>
 
           <h3>Kom gezellig voetballen.</h3>
-        
-        </section>
 
       </section>
 
+      <a href="https://www.deregenboog.org/nl/projecten/taalmaatje-van-het-amsterdams-buurvrouwen-contact" class="button-link" target="_blank">Meer informatie</a>
+
     </div>
-    <div class="muziek card">
+    <div class="card"  data-price="free" data-person="offer" data-categ="music">
 
       <section class="card-content">
 
@@ -176,24 +155,22 @@
         <h4>locatie: Bos en Lommer</h4>
         <h4>datum: -</h4>
 
-        <section class="cardinfo">
-          
-
           <h2>Bos en Lommer Zingt</h2>
 
           <h3>Buurtkoor uit Bos en Lommer</h3>
-        
-        </section>
 
       </section>
 
-    </div>
+      <a href="https://www.facebook.com/BewonerskoorBosenLommerzingt/?locale=nl_NL" class="button-link" target="_blank">Meer informatie</a>
 
+    </div>
 
   </section>
 
+  <script src="scripts/script.js"></script>
+
 </main>
   
-    <script src="scripts/script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
