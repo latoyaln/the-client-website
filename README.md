@@ -6,7 +6,7 @@ De directie van De Hallen wil meer betekenisvol zijn voor de buurt. In deze resp
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
-  * [Huidige site](#huidigesite)
+  * [Huidige site](#huidige-site)
   * [Bronnen](#bronnen)
   * [Licentie](#licentie)
 
