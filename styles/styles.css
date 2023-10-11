@@ -5,13 +5,17 @@
     font-family: 'Space Grotesk';
   }
 
-nav{
+/*With position fixed I display the nav on top no matter where you are on the page*/
+  nav{
         background-color: #388087;
         font-size: 1em;
         height: 6vh;
         text-align: center;
         font-weight: medium;
         padding-top: 10px;
+        top: 0;
+        position:fixed;
+        width: 100vw;
 }
 
 nav ul{
@@ -20,13 +24,15 @@ nav ul{
   
   }
 
+/*With text decoration I prevent the links from getting an automatic 
+underline*/
  nav a{
-    list-style-type: none;
     color: #f6f6f2;
     text-decoration: none;
     
   }
 
+  /*Inline-block lets the nav links display next to eachother*/
 nav li {
     display: inline-block;
     padding-left: 3em;
@@ -35,6 +41,9 @@ nav li {
 nav li:first-child{
     padding-left: 0em;
   }
+
+  /*Here I make it so that the last nav link ends up on another place and not
+  directly next to the other links.s*/
 nav li:last-child{
     float: right;
     padding: 0rem;
@@ -47,10 +56,15 @@ main{
   margin-top: 5vh;
   margin-left: 2em;
 }
+
+/*ch makes sure the sentences dont become too long*/
 header{
   margin-bottom: 5vh;
   max-width: 70ch;
 }
+
+/*With float left I make sure the sidebar displays on the left side*/
+
 .sidebar{
     background-color: #f6f6f2;
     width: 15vw;
@@ -59,6 +73,7 @@ header{
     padding-right: 0;
     float: left;
 }
+
 .sidebar h2{
   font-size: 1.5em;
   color: #000;
@@ -76,8 +91,7 @@ header{
 }
 
 .applyFilters{
-  bottom: 0;
-  position: absolute;
+  position: relative;
   border-radius: 10px; /* Rounded corners */
   color: #fff;
   width: 6vw;
@@ -92,8 +106,8 @@ h3{
 
 .initiatieven-cards{
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap; /*wanneer er meer items bij komen dan geven de andere elementen elkaar vooralsnog evenveel ruimte*/
+  justify-content: space-evenly; /* The space between each card is all exactly the same.*/
+  flex-wrap: wrap; /*Specifies that the flexible items will wrap if necessary*/
   float: left;
   width: 80vw;
 }
@@ -106,6 +120,7 @@ h3{
   font-size: 0.8em;
 }
 
+/*With box shadow i make sure that the cards get a shadow*/
 .card  {
   width: 30%;
   margin: 10px;
@@ -120,7 +135,7 @@ h3{
   align-items: center;
   border: #388087;
   background-color: #fff;
-  height: vh;
+  height: 60vh;
 }
 
 .cardinfo {
