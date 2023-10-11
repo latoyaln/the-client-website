@@ -25,6 +25,7 @@ Bij het maken van dit platform maak ik gebruik van HTML, CSS en JS. Ook gebruik 
 
 ## Huidige site
 
+![huidigeclientsite](https://github.com/latoyaln/the-client-website/assets/76912011/ac675a72-579c-4962-9a34-487e576b4fe7)
 
 ## Bronnen
 
