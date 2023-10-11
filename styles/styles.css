@@ -61,6 +61,7 @@ main{
 header{
   margin-bottom: 5vh;
   max-width: 70ch;
+  padding-top: 5vh;
 }
 
 /*With float left I make sure the sidebar displays on the left side*/
