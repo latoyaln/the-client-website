@@ -25,6 +25,11 @@ Bij het maken van dit platform maak ik gebruik van HTML, CSS en JS. Ook gebruik 
 
 ## Bronnen
 
+De Hallen - https://dehallen-amsterdam.nl
+
+MDN Web docs - https://developer.mozilla.org/en-US/docs/Web/CSS
+
+
 
 ## Licentie
 
