@@ -27,7 +27,7 @@ nav ul{
 /*With text decoration I prevent the links from getting an automatic 
 underline*/
  nav a{
-    color: #f6f6f2;
+    color: #fff;
     text-decoration: none;
     
   }
