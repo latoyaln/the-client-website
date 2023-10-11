@@ -15,10 +15,6 @@ Deze respository bied een oplossing op de user stories:
 
 "Als buurtbewoner van Amsterdam West wil ik een overzicht van alle buurtinitiatieven kunnen bekijken, zodat ik een indruk kan krijgen van wat er allemaal te doen is in de wijk" 
 
-en 
-
-"Als buurtbewoner van Amsterdam West wil ik meer informatie over een initiatief kunnen bekijken, zodat ik kan zien of ik mij bij het initiatief wil aansluiten"
-
 ## Kenmerken
 
 Bij het maken van dit platform maak ik gebruik van HTML, CSS en JS. Ook gebruik ik Figma voor het design van de website.
