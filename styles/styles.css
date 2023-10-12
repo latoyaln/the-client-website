@@ -16,6 +16,7 @@
     top: 0;
     position:fixed;
     width: 100vw;
+
 }
 
 nav ul{
@@ -79,11 +80,13 @@ header{
   font-size: 1.5em;
   color: #000;
   padding-bottom: 1vh;
+  font-weight: light;
 }
 
 .sidebar h3{
   padding-bottom: 1vh;
   padding-top: 1vh;
+
 }
 
 .dropdown-button {
@@ -106,6 +109,7 @@ label {
   margin: 0 10px 10px;
   display: block;
   white-space: nowrap;
+  font-family: 'Helvetica';
 }
 
 label:hover {
@@ -186,7 +190,11 @@ img {
   font-size: 1.5em;
   color: #388087;
   font-weight: bold;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+.card h3, h4{
+  font-weight: regular;
 }
 
 
